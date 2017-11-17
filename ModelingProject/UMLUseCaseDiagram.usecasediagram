@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e02c2c37-57ac-43df-85d3-820853f313ac" name="UMLUseCaseDiagram" linkedPackageId="4346834a-3c99-4681-86b2-8f46b931d46f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8ad11474-6e55-40cc-99c7-c50b33c9ddb6" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4a7768b-6b52-40b6-a683-55393c5d604b" />
+        <targetEnds>
+          <association Id="cbd092a8-2b40-4da4-81c7-23be4d330b0b" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Decrypt data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3799ffe7-2dba-4fcc-b1b5-de2296f42db0" LastKnownName="Decrypt data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc2ef4bc-a990-4930-aee2-163093fd3efb" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0616456-a82e-4a38-9c35-8c8432bf6c03" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29fe4978-c0d7-4da4-bc4e-9eda63d82584" name="Decrypt data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="81249771-da4e-490f-93de-b04b9c2965da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de1062c6-7f4d-41b4-ba49-77ff2db92001" />
+          </association>
+          <association Id="bcf02dea-c21c-4ca5-a171-1cd3192308ba" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Encypt data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ccc9117f-dd3b-404b-b735-c801cb129d5c" LastKnownName="Encypt data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed7654ac-aa68-4951-8c8f-3a2415f261be" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e2a710a4-8a58-4b82-b395-dfc0423f57ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b156cca0-8c14-4281-a805-1b2c526a07fb" name="Encypt data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62548f9b-3123-4146-9835-388d76cc7e61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df64996e-b138-4004-87cf-1cab39d3b64f" />
+          </association>
+          <association Id="6ab4fe50-20ac-4f35-90a2-b6d3e1ce69c1" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Send data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d504337-7ee5-48d1-9da7-24627d6896c9" LastKnownName="Send data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d07e6b4-85d0-456a-992e-3871123e45be" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e6d47d20-d282-4b44-bcfe-15f839b745f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f1d242f-2690-40d9-b296-1d999843de33" name="Send data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9681cfbb-ed90-4879-9b52-625c94f91263" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f90e4fb-501a-4c44-bba1-b1c38ef1f0a6" />
+          </association>
+          <association Id="af823ebd-5457-4a2a-aeec-d17afbaabe28" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Receive data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f9d00cd0-e0c4-4a56-975d-d80c4938f9d3" LastKnownName="Receive data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f8cbeaa-58b3-48e0-b224-2f13cf239584" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="057db010-2419-410c-877e-4ec904cb8e3b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe6876e2-b6ed-428c-8f41-15d2a3dad5fe" name="Receive data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="46cf6a06-315c-42c0-bf05-a52e4e051b64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="814055df-3525-4c51-ac2b-339481525473" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="088c6737-6a82-4624-806a-12c560e23443" name="Client" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00532a05-e830-4b5b-a4bb-76612b24426d" />
+        <targetEnds>
+          <association Id="c67c1f43-b732-4095-9fec-07713f19955c" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Send data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d504337-7ee5-48d1-9da7-24627d6896c9" LastKnownName="Send data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91705614-84d0-4131-9f90-cc898eb6f94e" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6351cdc3-7d0d-402a-a406-b86c0ae688ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7cff37b-0c4c-4da7-9edc-477ac5be9a3f" name="Send data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4e0ba43d-587c-46b0-b9e6-76581ff63593" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="94bc9007-c792-40eb-9f3f-ea3c3b5305a5" />
+          </association>
+          <association Id="a0fa4a58-0db1-4b96-968f-37f9977bd6f8" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Receive data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f9d00cd0-e0c4-4a56-975d-d80c4938f9d3" LastKnownName="Receive data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebb348fa-181d-456a-af2a-515c57e1cb44" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7cea5ad2-9d0d-4f1e-bc86-54ac6f19e78b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dbdb488e-2163-464c-a8fc-b12453b9bf5e" name="Receive data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="185bce67-bfe8-4608-ac99-e901ce4c498d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4bb413e-75bd-4b87-814f-34961aed859f" />
+          </association>
+          <association Id="d31916ce-7f99-45dd-b66f-9ab89da6307e" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Show data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5e811d18-183c-4c2f-a441-e4c3c6963a89" LastKnownName="Show data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81521db5-c0c0-43ae-bbb1-9fbe4c8e497f" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f9e928e-a4ab-4a1f-8c8a-425e54b97955" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e511694f-2195-4796-94d2-a9ca97c10568" name="Show data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64871c8c-9a4f-44bd-a152-7a6e33c5d0b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a3dbd7f6-c3af-4896-9d07-0db4a80e54dc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d504337-7ee5-48d1-9da7-24627d6896c9" name="Send data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01b3ceae-35d2-4db6-a416-95662548a746" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f9d00cd0-e0c4-4a56-975d-d80c4938f9d3" name="Receive data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c39ae0f-6722-4270-9dfe-cd46a3b38825" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e811d18-183c-4c2f-a441-e4c3c6963a89" name="Show data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bca6e9f9-1941-4c4d-b4cf-5ad4ef069425" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ccc9117f-dd3b-404b-b735-c801cb129d5c" name="Encypt data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fae68630-dac8-4ade-87f7-b29d15a2092f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3799ffe7-2dba-4fcc-b1b5-de2296f42db0" name="Decrypt data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ba924d7-add3-46e8-9a04-fd6943abe7ab" />
+        <extendedCases>
+          <extend Id="350f0ec8-22b5-4641-ad8a-a7f2dd198944">
+            <useCaseMoniker Id="ffecbf08-e773-4587-b4d7-1a2fd4255f12" LastKnownName="Suppose shift" />
+            <elementDefinition Id="8593e593-ae1e-41f6-88d1-9ec41376a655" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ffecbf08-e773-4587-b4d7-1a2fd4255f12" name="Suppose shift" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96d30200-ed67-4578-86f6-e6c129b81c2f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ea10f55-aeba-4565-ab3a-2eed11b232f0" name="Calculate frequencies" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23693f21-cd3b-4051-9199-020fafb122c9" />
+        <additions>
+          <include Id="ade3f15e-59a9-4464-b3d3-e3d1336cd2e6">
+            <useCaseMoniker Id="3799ffe7-2dba-4fcc-b1b5-de2296f42db0" LastKnownName="Decrypt data" />
+            <elementDefinition Id="deb1a935-d657-45c2-af91-8b8e2560488d" />
+          </include>
+          <include Id="576dce09-b6e6-4496-97b1-3029e8529dfa">
+            <useCaseMoniker Id="ccc9117f-dd3b-404b-b735-c801cb129d5c" LastKnownName="Encypt data" />
+            <elementDefinition Id="80b4bdbb-419c-4df3-ba19-822d16286e23" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4346834a-3c99-4681-86b2-8f46b931d46f" name="ModelingProject">
+    <elementDefinition Id="969e0d28-b031-4535-8165-6c0b1a930856" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9cc0762e-1cb4-4642-a80f-529019aaeb7a">
+        <profileInstance Id="536cfe70-fcfe-4b67-8da7-86bc42a021b3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5db9208b-7c64-4a1e-b5bc-6ee5d31dca26">
+        <profileInstance Id="52afa93f-68cc-413a-adec-26661d10748f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
