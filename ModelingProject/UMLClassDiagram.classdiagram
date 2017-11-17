@@ -1,360 +1,377 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="370c3a12-f653-46b8-9aa2-28349f899804" name="UMLClassDiagram" linkedPackageId="b98eacee-794f-490c-9cc1-f836c984a60a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b0e1a3ab-5e99-41cd-9dd5-45a2c816b5fd" name="UMLClassDiagram" linkedPackageId="5e9a9578-887b-4cb0-b680-46284cfc1b2d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f9efa3d4-30a7-4a18-99a5-4a142113e753" name="Letter" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="f9b2c0df-d98e-4d89-a085-95b03c12a2d4" />
-        <ownedAttributesInternal>
-          <property Id="e7c08434-c631-4b78-aa4e-e6c9f7d93d31" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4f03b190-6c19-448c-8eb6-a973007c087b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="d0649de5-0eeb-4133-a7d2-3da2bb4c38d5" name="Frequency" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="bb778930-13f7-429e-9583-ef7cf3174dfc" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="4cb808a0-9fa3-4f3d-8897-58a66162bd3f" LastKnownName="Double" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="4cb808a0-9fa3-4f3d-8897-58a66162bd3f" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
-        <elementDefinition Id="7935bcb8-3fc0-4f05-95e3-078b10d2455a" />
-      </referencedType>
-    </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="ff7bf75e-48cf-4f3b-87e6-fa41f257cc57" name="DiagramBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="c1cdaf84-903a-4471-8382-a191847ab049" />
+      <class Id="a52e005b-bfc8-4bd8-bb4f-e5b4d2e69b29" name="TcpServer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="54c76721-0cc3-4f73-a2fa-7223b1f244ac" />
         <targetEnds>
-          <association Id="ca06f52d-c308-430a-84f7-2fc31db82244" isDerived="false" sourceEndRoleName="DiagramBuilder" targetEndRoleName="Letter" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f9efa3d4-30a7-4a18-99a5-4a142113e753" LastKnownName="Letter" />
+          <association Id="bad6e2a9-e6b9-4274-bd89-d50d0a65f5e4" isDerived="false" sourceEndRoleName="TcpServer" targetEndRoleName="ClientObject" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e2c73990-f01c-4c8f-9019-f58f0d470b74" LastKnownName="ClientObject" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="7fd19973-33e0-463d-b548-e547fd6f0916" name="DiagramBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f0323709-0740-481e-b05a-cfe476c5f89c" />
+                <memberEnd Id="c3b85818-323d-4aae-956a-20357ede90ca" name="TcpServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd8cbf0d-3ee6-4d47-a809-c5bf4ab067aa" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="3e1ef632-3740-4010-96c9-bbde28226348" name="Letter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="4bcfbd97-ae01-4bd4-9c45-3eecc750c571" />
+                <memberEnd Id="6266053a-c41d-49f8-9adb-4bcbf7eb0671" name="ClientObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="54ff9911-8406-4ef9-8d8f-70410c35a2fe" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="32114ccc-de56-45d8-996d-f0295866434c" />
-          </association>
-          <association Id="b9c655d2-9447-41d1-909a-122e95f2e9e2" isDerived="false" sourceEndRoleName="DiagramBuilder" targetEndRoleName="Client" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b18e020c-b16c-41a0-95b7-8c510eaa8a46" LastKnownName="Client" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="91450ead-7615-4341-b49b-6e6ff3ada1f4" name="DiagramBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1eab206a-9090-462e-a631-33c93695c60c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ebfa5380-0fcb-4b5a-bf12-5c0d88d5c831" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="1794eacb-af22-4d8f-8462-be384dba82da" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="4e8f2af9-e787-48cf-bc75-a7b3b188e59f" />
+            <elementDefinition Id="376c6071-b2b9-4abb-9a95-d1fa55f2f4fd" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="3c033134-aac9-459b-bf74-5189104cf95e" name="LetterCollection" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="559b2c1c-2708-44b6-8014-d295072c0a4e" />
+          <property Id="ba38906a-b5d9-4ba6-bc0f-b49055770ffb" name="ipAddress" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99861b11-2666-4f08-99c8-c625d165a0d5" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="a37b64f3-626f-4864-be63-41875788cbdc" LastKnownName="List&lt;Letter&gt;" />
+              <referencedTypeMoniker Id="ebf13240-6a61-4560-b853-03ec23eedb7c" LastKnownName="IPAddress" />
             </type_NamedElement>
           </property>
-          <property Id="33b91c71-e2ce-4eba-b9fd-6227e2f50d55" name="DataForCollection" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="36671595-3208-459d-b1b2-5742cfa06a87" />
+          <property Id="78746d95-d5df-4cb9-99fa-45d5a1e93f29" name="portNumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82a6c09f-c3b2-4320-bb3f-33ef691cf6fa" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="5ecb87ac-ca2e-446d-a90f-b4cb26d3ef45" name="CreateCollection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e2db98d3-b99c-44dc-aa53-36b87c0b5a45" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="a37b64f3-626f-4864-be63-41875788cbdc" name="List&lt;Letter&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Letter&gt;">
-        <elementDefinition Id="2102c3f6-2c21-4238-87b1-41847d645c84" />
-      </referencedType>
-    </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="b18e020c-b16c-41a0-95b7-8c510eaa8a46" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="3a2d6a6c-12eb-4d7e-92a1-641a23769949" />
-        <ownedAttributesInternal>
-          <property Id="5d5db5e6-7420-444f-891f-718d820fbe39" name="portNumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7721a94e-6f08-4ee0-af05-729f6c36eb85" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="55234f9d-37ca-41bb-a37a-154abd668c88" LastKnownName="Double" />
+              <referencedTypeMoniker Id="73a49173-cf48-4593-ab88-85d5ebc322cd" LastKnownName="Integer" />
             </type_NamedElement>
             <defaultValue>
-              <literalString Id="7fb4dbf7-cfe1-47b1-b53b-b36503d5d31a" name="DefaultValue" value="11000">
-                <elementDefinition Id="701a022a-a38a-4a2d-b181-8cc4ca031caf" />
+              <literalString Id="99e19588-0996-440b-a05f-c8fb53ee20bc" name="DefaultValue" value="11000">
+                <elementDefinition Id="0ccf9896-f4f8-42f9-afc8-7f76f0982e83" />
               </literalString>
             </defaultValue>
           </property>
-          <property Id="6d41c680-8d0a-483b-bc90-0a1a4a30e9ca" name="ipAddress" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b3203d65-9687-4c90-bb7c-442bea01cb00" />
+          <property Id="82ce145c-5a2d-4a5d-9de1-59882dba8557" name="listener" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e75b5ec3-fa58-4e9a-8cb1-15032d6ff040" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="283a1baf-4bb6-40b6-a87a-c4dda3102471" LastKnownName="IPAddress" />
-            </type_NamedElement>
-          </property>
-          <property Id="0aab487d-422b-4552-a93c-6ceda9fe2cae" name="tcpClient" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a2823752-f7ed-4dd3-9884-689fa945e97a" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ce788d31-2f34-4fec-90d3-f1b9fe8bae52" LastKnownName="TcpClient" />
-            </type_NamedElement>
-          </property>
-          <property Id="791c392b-0a9a-4d7d-84bf-713fedd7c86c" name="netStream" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="51450267-3702-44ca-9d59-3cc592919c89" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="dc8487e8-c807-4f0f-b5a8-7bbbf50844e5" LastKnownName="NetworkStream" />
-            </type_NamedElement>
-          </property>
-          <property Id="aa99f941-b276-490f-a359-bd737ca1bad5" name="shiftToServer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="662db84b-51c6-478a-9f64-8a86672b7699" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="73b94190-fb06-4950-a962-220411fdc1b2" LastKnownName="Integer" />
-            </type_NamedElement>
-          </property>
-          <property Id="b6ac5e7a-7cd7-4907-9577-026dbe1523a5" name="decryptedData" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4e3ddb41-9cde-4575-b9a2-86d97a17e072" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="0eb6beb9-6d98-4169-ba10-e1934f4c91cf" name="encryptedData" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3761afea-b93d-4af3-bac1-08ef42a73d0f" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="2cc783c8-a62c-4eb8-ae4e-8a9fa1591263" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="eaee9774-8877-468f-8676-a614973b4b31" name="diagramBuilder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="88106a53-cbe2-436a-9d1d-2998109478f4" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="527d4b60-4c0b-49e6-a9a3-fbc3abecc3ce" LastKnownName="DiagramBuilder" />
+              <referencedTypeMoniker Id="a4c293e4-f44b-4a6c-8377-e2b23663ea88" LastKnownName="TcpListener" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="e5b82894-27f3-44b7-9a22-33eb691069fd" name="SendAndReceiveDataWithServer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="44c9b6e3-35ba-4c0f-965f-d9088da92b7f" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="3b606898-eb66-4e5c-b616-fde4104788c1" direction="Return" isUnique="false">
-                  <elementDefinition Id="484aebf3-cedf-46ec-92ef-d0a28e62843f" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" LastKnownName="String" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f0192261-a3e7-4ad4-b5d8-6de3ed790d81" name="data" direction="In" isUnique="false">
-                  <elementDefinition Id="045e4479-b77b-4ec0-8030-c4e2adcfd323" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="f04df442-4a9a-4110-8a20-0a1d79ba1b3d" LastKnownName="String" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
+          <operation Id="b40325be-2119-427e-a4ea-e0615b476aa9" name="SendAndreceiveData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2fe0146c-a2a2-4cdf-9b95-9eec12d38b60" />
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="55234f9d-37ca-41bb-a37a-154abd668c88" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
-        <elementDefinition Id="7935bcb8-3fc0-4f05-95e3-078b10d2455a" />
+      <referencedType Id="ebf13240-6a61-4560-b853-03ec23eedb7c" name="IPAddress" isAbstract="false" isLeaf="false" cachedFullName="IPAddress">
+        <elementDefinition Id="fc37cf1a-87c0-4fe2-9646-284df8320635" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="283a1baf-4bb6-40b6-a87a-c4dda3102471" name="IPAddress" isAbstract="false" isLeaf="false" cachedFullName="IPAddress">
-        <elementDefinition Id="dd517f6a-a50e-40cc-8ca9-8b5d965ba68f" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="ce788d31-2f34-4fec-90d3-f1b9fe8bae52" name="TcpClient" isAbstract="false" isLeaf="false" cachedFullName="TcpClient">
-        <elementDefinition Id="90d7079c-670d-400b-9d92-986206389bc6" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="73b94190-fb06-4950-a962-220411fdc1b2" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+      <referencedType Id="73a49173-cf48-4593-ab88-85d5ebc322cd" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="2cc783c8-a62c-4eb8-ae4e-8a9fa1591263" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="dc8487e8-c807-4f0f-b5a8-7bbbf50844e5" name="NetworkStream" isAbstract="false" isLeaf="false" cachedFullName="NetworkStream">
-        <elementDefinition Id="449f39a0-a67b-44a1-9df6-5e1ea9410954" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="527d4b60-4c0b-49e6-a9a3-fbc3abecc3ce" name="DiagramBuilder" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::DiagramBuilder">
-        <elementDefinition Id="c1cdaf84-903a-4471-8382-a191847ab049" />
+      <referencedType Id="a4c293e4-f44b-4a6c-8377-e2b23663ea88" name="TcpListener" isAbstract="false" isLeaf="false" cachedFullName="TcpListener">
+        <elementDefinition Id="6b8dd4aa-d476-4c3c-98c9-3125d768cac8" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="773993b0-686b-4c73-9fbc-dc3b40fa9995" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b5daac0d-f67c-4637-9c59-9a741eb78138" />
-        <targetEnds>
-          <association Id="a289324e-cbfd-4227-9868-2ed1cd2b571b" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="Client" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b18e020c-b16c-41a0-95b7-8c510eaa8a46" LastKnownName="Client" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6705b06d-71e3-4837-ace8-41afc8bf64e0" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2227b30b-79dc-4201-b29f-9c4f331fafcb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="1cbc1217-52c3-41a0-abb2-ba67b541c2da" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="62fdf5f5-1d41-49f7-8327-2a44ec66e796" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="c5fc0404-35aa-4552-85fd-ba39652596cf" />
-          </association>
-        </targetEnds>
+      <class Id="18320a4b-b917-4f64-8cad-b4e1ae4032cb" name="FrequencyAnalizator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0062b862-94d9-4a72-8d90-9e01e6d4294d" />
         <ownedAttributesInternal>
-          <property Id="5ae20d58-12d6-4189-9a18-181e1a8e794f" name="client" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c18c96f9-3351-49fe-a124-889a51d409b7" />
+          <property Id="1fc89c3e-17cf-428b-9e19-5a307fdc774f" name="frequenciesDict" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="37ba4d74-c2ca-40e5-a04f-0615ecadf145" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="a65d8a55-eaf2-4674-92c6-8390d4af4fb2" LastKnownName="Client" />
+              <referencedTypeMoniker Id="415a0d51-4c91-4f70-a3d4-7849e2aa692f" LastKnownName="Dictionary&lt;Char, Double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="c23af88a-d0b0-4ad8-8e8a-0995d8b11141" name="engAlphabet" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f42c0345-3cdf-4d5a-9589-19afdff9c549" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4df98023-64e8-487f-916d-2e83b555f1ad" LastKnownName="List&lt;Char&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="848ea6d4-9f9a-40fb-b2ef-5774f88d5055" name="difference" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1194efd-352f-44b0-92ae-aeb7d9499c68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5ce7af4b-1afb-4111-8e4f-9ea4511e6d95" LastKnownName="Double" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="61940996-4041-4103-932e-80c0b0842466" name="DefaultValue" value="0.0025">
+                <elementDefinition Id="fc8dd25c-b73e-418a-bd40-a4926225f88a" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="bdc43b1b-458a-4ec3-ab89-c5a871d90f04" name="commonFrequencies" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e532af9-fd13-4425-ac4a-2b57c27e07d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="55d09963-ba90-467c-9483-3bf94744c05f" LastKnownName="Dictionary &lt;Char, Double&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="e3c42ed6-1757-4a25-868d-35418771b96f" name="buttonDecrypt_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="fd14cb70-6ce6-4f67-a6b3-75017f2b5970" />
+          <operation Id="e13108b0-3244-4844-92ef-01a84c6a6ec9" name="CalculateFrequencies" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2eef812d-fbdd-4717-a784-27969f680853" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="b601fa38-bf6d-4a7b-ada4-0e554a0ecafa" name="sender" direction="In" isUnique="false">
-                  <elementDefinition Id="97eac72c-365f-4fca-9f4e-cdcd1ff01db0" />
+                <parameter Id="bc50588b-5328-41f4-87dd-547ef16b6837" name="sourceText" direction="In" isUnique="false">
+                  <elementDefinition Id="2241a1a4-6d6e-4242-b8b7-02014f2abb6d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="91522a1b-7bd2-48d4-95f8-05e1f13e9119" LastKnownName="Object" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="060e9a24-828f-474d-86fa-6423e3b88ef6" name="e" direction="In" isUnique="false">
-                  <elementDefinition Id="b7be53f5-3fa1-4faa-9f9e-de2b05ea3833" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="7b8b68a1-7373-42c9-bca2-3cfd9f87b1ab" LastKnownName="RoutedEventArgs" />
+                    <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="6d658b47-3bfa-480c-a294-92f756872007" name="buttonEncrypt_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="198629af-2699-411a-a034-e11b80cc2952" />
+          <operation Id="34f04ed5-1cbb-4206-96ad-d18d425739c7" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5e17996-321b-41e0-a6d4-232d5d391893" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="1ebda5c7-54ef-43b4-a83e-f3dfcb44f370" name="sender" direction="In" isUnique="false">
-                  <elementDefinition Id="4a4ff127-470c-448b-a62a-2ced6b933ddb" />
+                <parameter Id="b82e34c4-a568-4f28-a5ca-1931ec2791fc" direction="Return" isUnique="false">
+                  <elementDefinition Id="341e4011-064f-4238-b450-03beb7a4396e" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="91522a1b-7bd2-48d4-95f8-05e1f13e9119" LastKnownName="Object" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="e52a66ff-6263-4038-ab80-8e69c9897b29" name="e" direction="In" isUnique="false">
-                  <elementDefinition Id="34b0d5d4-085d-48ca-8da1-91983e88f05f" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="7b8b68a1-7373-42c9-bca2-3cfd9f87b1ab" LastKnownName="RoutedEventArgs" />
+                    <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="c84a1a13-5bf4-48c6-bfee-347eeae84ac7" name="richTextBoxInput_TextChanged" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2e0a3ca3-bc24-4677-abd9-8ab47c57115a" />
+          <operation Id="41d7ae42-80ce-42c1-84cf-eb3e14bd42b2" name="FrequencyAnalisys" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6469006-76b6-41b7-8537-b236ce4bdf83" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3a065bb6-0319-4437-9361-a4fb56695302" name="sender" direction="In" isUnique="false">
-                  <elementDefinition Id="533ec176-de12-4e8f-b00e-4032ae0f1a19" />
+                <parameter Id="4269501d-14b7-4349-a42a-43c67d4a3130" direction="Return" isUnique="false">
+                  <elementDefinition Id="4a55db3a-56f1-4464-83bb-51b190bd1c1b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="91522a1b-7bd2-48d4-95f8-05e1f13e9119" LastKnownName="Object" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="fc515856-e4a4-45c1-a3c2-a9e43a5608d1" name="e" direction="In" isUnique="false">
-                  <elementDefinition Id="722892ea-2b75-495a-a80a-75c030d8759c" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="1121c62e-0a4c-4ef2-9c1c-9616c0005e62" LastKnownName="TextChangedEventArgs" />
+                    <referencedTypeMoniker Id="73a49173-cf48-4593-ab88-85d5ebc322cd" LastKnownName="Integer" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="06a805d5-0044-43a6-8609-1c2060572abd" name="DrawRectangles" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ac4f6597-cdb0-4421-b573-2af347dca393" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="eb613661-9cb7-49d1-80eb-0191ca2da108" name="diagramData" direction="In" isUnique="false">
-                  <elementDefinition Id="28f0c357-f763-4634-9afb-c76b24230421" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="a37b64f3-626f-4864-be63-41875788cbdc" LastKnownName="List&lt;Letter&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="b8473942-32b4-49b7-9b30-b2afd5c7ebec" name="ClearDiagramCanvasAndSupposeBox" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b009f0fd-1879-40f0-aced-0cc4bf1ddccf" />
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="a65d8a55-eaf2-4674-92c6-8390d4af4fb2" name="Client" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Client">
-        <elementDefinition Id="3a2d6a6c-12eb-4d7e-92a1-641a23769949" />
+      <referencedType Id="415a0d51-4c91-4f70-a3d4-7849e2aa692f" name="Dictionary&lt;Char, Double&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;Char, Double&gt;">
+        <elementDefinition Id="88087c70-9759-4604-936b-29ce955442f7" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="91522a1b-7bd2-48d4-95f8-05e1f13e9119" name="Object" isAbstract="false" isLeaf="false" cachedFullName="Object">
-        <elementDefinition Id="5de35384-e794-4186-aaee-8d3d65ccd457" />
+      <referencedType Id="4df98023-64e8-487f-916d-2e83b555f1ad" name="List&lt;Char&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Char&gt;">
+        <elementDefinition Id="65621c69-47d8-4dd8-9f5f-137916c6110c" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="7b8b68a1-7373-42c9-bca2-3cfd9f87b1ab" name="RoutedEventArgs" isAbstract="false" isLeaf="false" cachedFullName="RoutedEventArgs">
-        <elementDefinition Id="4a3eecdd-5cb1-4891-9e71-99c114f61f37" />
+      <referencedType Id="5ce7af4b-1afb-4111-8e4f-9ea4511e6d95" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
+        <elementDefinition Id="4b621b51-56b6-4937-9874-f325e4ad76d5" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="1121c62e-0a4c-4ef2-9c1c-9616c0005e62" name="TextChangedEventArgs" isAbstract="false" isLeaf="false" cachedFullName="TextChangedEventArgs">
-        <elementDefinition Id="6dfe3326-70d5-4ab9-a25f-6790051d7600" />
+      <referencedType Id="55d09963-ba90-467c-9483-3bf94744c05f" name="Dictionary &lt;Char, Double&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary &lt;Char, Double&gt;">
+        <elementDefinition Id="64c86950-8d2b-4214-b35d-7bba4b3233d7" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8495937d-b84d-4cb1-8967-ed00178b363f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e2c73990-f01c-4c8f-9019-f58f0d470b74" name="ClientObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6bccbea-2a53-4f7b-a2bd-06068a22f815" />
+        <targetEnds>
+          <association Id="07ecb0af-419a-4538-b05b-8fd326000f3f" isDerived="false" sourceEndRoleName="ClientObject" targetEndRoleName="FrequencyAnalizator" isLeaf="false" isAbstract="false">
+            <classMoniker Id="18320a4b-b917-4f64-8cad-b4e1ae4032cb" LastKnownName="FrequencyAnalizator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="033e2093-a23e-4e9f-a297-a1e9b0088538" name="ClientObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="98db761f-8ce9-487b-ad71-91b9c6d792ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4105975f-0951-4c97-8335-94ea07d56a63" name="FrequencyAnalizator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4c8d3c71-c271-4666-b986-9c374c55bf6e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cad4186b-2210-4a0e-be7d-1ef0378424ad" />
+          </association>
+          <association Id="53e73e8b-a1e3-4a57-8a43-9613bc12c193" isDerived="false" sourceEndRoleName="ClientObject" targetEndRoleName="CaesarCipherEncryptorDecryptor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="961999f3-1608-410d-ac8c-502e4cc5bb79" LastKnownName="CaesarCipherEncryptorDecryptor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cdfdf4b2-66b7-4eb7-80bf-ed2dd8ab7449" name="ClientObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a955c16b-2691-4037-898c-880809687e18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="043dc28a-0894-40f6-bee0-c67a39cecab1" name="CaesarCipherEncryptorDecryptor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="9f686f32-30af-425e-8d9a-02269d2d2df6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3cdb1e29-5215-423d-bda8-bbed908c221a" />
+          </association>
+          <association Id="aed3a88d-2b4d-4139-b11d-4dd23493c5f6" isDerived="false" sourceEndRoleName="ClientObject" targetEndRoleName="TcpClient" isLeaf="false" isAbstract="false">
+            <classMoniker Id="98c8623b-f1f5-4b8f-8957-c7fab5fa8c3a" LastKnownName="TcpClient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c60d6857-d41e-4fc0-9031-385f7fb6d2ae" name="ClientObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f3543d92-201c-47a7-ba4f-24836c6a07ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7596fd50-6524-400e-b32c-15bfa19f9ff3" name="TcpClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a0668e6f-7f31-40ba-ac4d-e645b3adda2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b137a2e7-76ad-4a60-b357-2317edb9ef76" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="586ce335-a724-420b-bb68-ed52b910f6d2" name="client" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94ddb5f8-5c36-4279-ad40-45ac641a2e17" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="483f058b-044a-405a-80e1-173c9c2c52b2" LastKnownName="TcpClient" />
+            </type_NamedElement>
+          </property>
+          <property Id="5bffe2ec-d1df-4fbd-9b74-cd77a683cc8d" name="caesarCipherEncryptorDecryptor" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3292d524-6eed-4f5f-ad82-542ca19ca8d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8df7784b-5449-4fa4-b2c8-1a6a11f974f5" LastKnownName="CaesarCipherEncryptorDecryptor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f1869518-9015-4454-a634-bc0fbd83f3d7" name="Process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be830656-d53e-4ec7-9678-ad1f8e28a5cd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="483f058b-044a-405a-80e1-173c9c2c52b2" name="TcpClient" isAbstract="false" isLeaf="false" cachedFullName="TcpClient">
+        <elementDefinition Id="0d74288f-0080-4c4e-ad75-e131a95d3f1b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8df7784b-5449-4fa4-b2c8-1a6a11f974f5" name="CaesarCipherEncryptorDecryptor" isAbstract="false" isLeaf="false" cachedFullName="CaesarCipherEncryptorDecryptor">
+        <elementDefinition Id="87766a77-0438-4661-8fb0-1a474f565b56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="961999f3-1608-410d-ac8c-502e4cc5bb79" name="CaesarCipherEncryptorDecryptor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17ef4107-bfb1-4348-b565-549fe2e5858a" />
+        <ownedAttributesInternal>
+          <property Id="4a742fab-3723-4ab6-8251-59f78cd90c62" name="shift" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="95602aae-5624-4f41-987c-c40d1ab4fd89" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="73a49173-cf48-4593-ab88-85d5ebc322cd" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="71973321-59a0-4029-b1ef-7b590e8b2cf1" name="dataToEncrypt" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1dec2440-b43d-4659-82e7-6dd01a5c5ed7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="3910766e-80d1-45f2-9285-2c2854ee43e2" name="engAlphabet" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="269a4162-8bcc-47f2-80f6-6256a4ad85ca" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4df98023-64e8-487f-916d-2e83b555f1ad" LastKnownName="List&lt;Char&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="077498e3-275b-4afb-9dc1-c78ba9604a15" name="DoSymbolEncryption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="75d62707-c6bd-47c8-9b00-97eb5e542ab7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b170e31a-b37d-45c1-ab03-49c988fe9fe0" direction="Return" isUnique="false">
+                  <elementDefinition Id="e87b0549-7c04-4fac-b79f-4436e83d413b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b18c256c-fa9a-4866-aabe-04f810ae58d1" name="symbol" direction="In" isUnique="false">
+                  <elementDefinition Id="6db3547b-7e96-4cff-bd6d-e9ad5eaeaa7b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de03cd98-a3d6-4bfc-ad38-f0ef33a8f650" LastKnownName="Char" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b66a1dbc-9d04-46a1-9c41-9769ee4eb4ce" name="DoSymbolDecryption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8aa418fd-501e-4133-ad8d-9ae13c346170" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="807796e6-751b-47e7-b502-1974a5d5ada3" name="symbol" direction="In" isUnique="false">
+                  <elementDefinition Id="8b339431-0844-4321-8593-798b792421f0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de03cd98-a3d6-4bfc-ad38-f0ef33a8f650" LastKnownName="Char" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d149027d-41b8-4f1e-b267-47a30a49443d" direction="Return" isUnique="false">
+                  <elementDefinition Id="6fc46003-1656-4b1b-95bd-ab13de07781b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="22a94a93-2fa8-4433-9837-79cd579cb010" name="EncryptionDecryption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24b826c9-b7d5-40e6-a6e7-6bb69397ca27" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="67f4c4dd-c7a7-46e0-aaad-93b85ae2cb35" direction="Return" isUnique="false">
+                  <elementDefinition Id="a7e5eaf2-a3f3-47fe-aa1b-3ff8c57ce3dc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8495937d-b84d-4cb1-8967-ed00178b363f" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="46dba048-19eb-4797-a5bb-ee9640b6ebd1" name="encryptionDecryption" direction="In" isUnique="false">
+                  <elementDefinition Id="b72173f1-5958-4a8d-b7c1-728a9119abf9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bbac2e65-307f-47e4-a132-0c2eaf920266" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="de03cd98-a3d6-4bfc-ad38-f0ef33a8f650" name="Char" isAbstract="false" isLeaf="false" cachedFullName="Char">
+        <elementDefinition Id="7da08691-1afc-4035-8396-7d4907f5cc72" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bbac2e65-307f-47e4-a132-0c2eaf920266" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="98c8623b-f1f5-4b8f-8957-c7fab5fa8c3a" name="TcpClient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b5e7c07-651d-4bb8-9094-ae4e6b5626d6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
-  <package Id="b98eacee-794f-490c-9cc1-f836c984a60a" name="ModelingProject">
-    <elementDefinition Id="969e0d28-b031-4535-8165-6c0b1a930856" />
+  <package Id="5e9a9578-887b-4cb0-b680-46284cfc1b2d" name="ModelingProject">
+    <elementDefinition Id="04cf93b4-36b1-43d6-b648-e24f9878d63a" />
     <profileInstances>
-      <packageHasProfileInstances Id="cc52180a-de91-44a5-8d28-4eae6d674129">
-        <profileInstance Id="c2cc6a6f-3008-4d9e-ae54-6ea097a3f0b1" name="StandardProfileL2">
+      <packageHasProfileInstances Id="0876e7c7-7e3b-4c6d-ad60-80dc2fe43179">
+        <profileInstance Id="d4a764b7-6500-4bc9-8990-f1ed598b719e" name="StandardProfileL2">
           <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
         </profileInstance>
         <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
       </packageHasProfileInstances>
-      <packageHasProfileInstances Id="0806fb24-c512-4fc8-803f-096a32221a2f">
-        <profileInstance Id="5df3642b-b184-4d65-abfd-26f8d92ead7c" name="StandardProfileL3">
+      <packageHasProfileInstances Id="80d06b2f-0d3f-47f5-96fb-28397a1e31e8">
+        <profileInstance Id="617fbd62-d8cf-4752-8661-1af20a1efeb0" name="StandardProfileL3">
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />

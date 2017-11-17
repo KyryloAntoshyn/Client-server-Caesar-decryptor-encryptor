@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{56789866-5710-4e41-8485-868ed15539bc}</ProjectGuid>
+    <ProjectGuid>{730b589a-943d-47cf-b8cd-5111ba7859ae}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>ModelingProject</Name>
     <RootNamespace>ModelingProject</RootNamespace>
@@ -28,13 +28,6 @@
     <Content Include="UMLClassDiagram.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLClassDiagram.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLUseCaseDiagram.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLUseCaseDiagram.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLUseCaseDiagram.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject.uml">
